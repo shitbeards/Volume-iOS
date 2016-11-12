@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Volume
+@testable import Volume_iOS
 
 class VolumeTests: XCTestCase {
     
