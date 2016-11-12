@@ -34,17 +34,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		84FF6DCD1DD7792F0028CD88 /* Volume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FF6DCD1DD7792F0028CD88 /* Volume-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volume-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FF6DD01DD7792F0028CD88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FF6DD21DD7792F0028CD88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84FF6DD51DD7792F0028CD88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84FF6DD71DD7792F0028CD88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FF6DDA1DD7792F0028CD88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FF6DDC1DD7792F0028CD88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84FF6DE11DD779300028CD88 /* VolumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FF6DE11DD779300028CD88 /* Volume-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Volume-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FF6DE51DD779300028CD88 /* VolumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeTests.swift; sourceTree = "<group>"; };
 		84FF6DE71DD779300028CD88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84FF6DEC1DD779300028CD88 /* VolumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VolumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FF6DEC1DD779300028CD88 /* Volume-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Volume-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FF6DF01DD779300028CD88 /* VolumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeUITests.swift; sourceTree = "<group>"; };
 		84FF6DF21DD779300028CD88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,9 +87,9 @@
 		84FF6DCE1DD7792F0028CD88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				84FF6DCD1DD7792F0028CD88 /* Volume.app */,
-				84FF6DE11DD779300028CD88 /* VolumeTests.xctest */,
-				84FF6DEC1DD779300028CD88 /* VolumeUITests.xctest */,
+				84FF6DCD1DD7792F0028CD88 /* Volume-iOS.app */,
+				84FF6DE11DD779300028CD88 /* Volume-iOSTests.xctest */,
+				84FF6DEC1DD779300028CD88 /* Volume-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		84FF6DCC1DD7792F0028CD88 /* Volume */ = {
+		84FF6DCC1DD7792F0028CD88 /* Volume-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84FF6DF51DD779300028CD88 /* Build configuration list for PBXNativeTarget "Volume" */;
+			buildConfigurationList = 84FF6DF51DD779300028CD88 /* Build configuration list for PBXNativeTarget "Volume-iOS" */;
 			buildPhases = (
 				84FF6DC91DD7792F0028CD88 /* Sources */,
 				84FF6DCA1DD7792F0028CD88 /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = Volume;
+			name = "Volume-iOS";
 			productName = Volume;
-			productReference = 84FF6DCD1DD7792F0028CD88 /* Volume.app */;
+			productReference = 84FF6DCD1DD7792F0028CD88 /* Volume-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		84FF6DE01DD779300028CD88 /* VolumeTests */ = {
+		84FF6DE01DD779300028CD88 /* Volume-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84FF6DF81DD779300028CD88 /* Build configuration list for PBXNativeTarget "VolumeTests" */;
+			buildConfigurationList = 84FF6DF81DD779300028CD88 /* Build configuration list for PBXNativeTarget "Volume-iOSTests" */;
 			buildPhases = (
 				84FF6DDD1DD779300028CD88 /* Sources */,
 				84FF6DDE1DD779300028CD88 /* Frameworks */,
@@ -158,14 +158,14 @@
 			dependencies = (
 				84FF6DE31DD779300028CD88 /* PBXTargetDependency */,
 			);
-			name = VolumeTests;
+			name = "Volume-iOSTests";
 			productName = VolumeTests;
-			productReference = 84FF6DE11DD779300028CD88 /* VolumeTests.xctest */;
+			productReference = 84FF6DE11DD779300028CD88 /* Volume-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		84FF6DEB1DD779300028CD88 /* VolumeUITests */ = {
+		84FF6DEB1DD779300028CD88 /* Volume-iOSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84FF6DFB1DD779300028CD88 /* Build configuration list for PBXNativeTarget "VolumeUITests" */;
+			buildConfigurationList = 84FF6DFB1DD779300028CD88 /* Build configuration list for PBXNativeTarget "Volume-iOSUITests" */;
 			buildPhases = (
 				84FF6DE81DD779300028CD88 /* Sources */,
 				84FF6DE91DD779300028CD88 /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				84FF6DEE1DD779300028CD88 /* PBXTargetDependency */,
 			);
-			name = VolumeUITests;
+			name = "Volume-iOSUITests";
 			productName = VolumeUITests;
-			productReference = 84FF6DEC1DD779300028CD88 /* VolumeUITests.xctest */;
+			productReference = 84FF6DEC1DD779300028CD88 /* Volume-iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +210,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 84FF6DC81DD7792F0028CD88 /* Build configuration list for PBXProject "Volume" */;
+			buildConfigurationList = 84FF6DC81DD7792F0028CD88 /* Build configuration list for PBXProject "Volume-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,9 +223,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84FF6DCC1DD7792F0028CD88 /* Volume */,
-				84FF6DE01DD779300028CD88 /* VolumeTests */,
-				84FF6DEB1DD779300028CD88 /* VolumeUITests */,
+				84FF6DCC1DD7792F0028CD88 /* Volume-iOS */,
+				84FF6DE01DD779300028CD88 /* Volume-iOSTests */,
+				84FF6DEB1DD779300028CD88 /* Volume-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,12 +288,12 @@
 /* Begin PBXTargetDependency section */
 		84FF6DE31DD779300028CD88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84FF6DCC1DD7792F0028CD88 /* Volume */;
+			target = 84FF6DCC1DD7792F0028CD88 /* Volume-iOS */;
 			targetProxy = 84FF6DE21DD779300028CD88 /* PBXContainerItemProxy */;
 		};
 		84FF6DEE1DD779300028CD88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 84FF6DCC1DD7792F0028CD88 /* Volume */;
+			target = 84FF6DCC1DD7792F0028CD88 /* Volume-iOS */;
 			targetProxy = 84FF6DED1DD779300028CD88 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -448,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shitbeards.VolumeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Volume.app/Volume";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Volume-iOS.app/Volume-iOS";
 			};
 			name = Debug;
 		};
@@ -463,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shitbeards.VolumeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Volume.app/Volume";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Volume-iOS.app/Volume-iOS";
 			};
 			name = Release;
 		};
@@ -498,7 +498,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		84FF6DC81DD7792F0028CD88 /* Build configuration list for PBXProject "Volume" */ = {
+		84FF6DC81DD7792F0028CD88 /* Build configuration list for PBXProject "Volume-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84FF6DF31DD779300028CD88 /* Debug */,
@@ -507,29 +507,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		84FF6DF51DD779300028CD88 /* Build configuration list for PBXNativeTarget "Volume" */ = {
+		84FF6DF51DD779300028CD88 /* Build configuration list for PBXNativeTarget "Volume-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84FF6DF61DD779300028CD88 /* Debug */,
 				84FF6DF71DD779300028CD88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		84FF6DF81DD779300028CD88 /* Build configuration list for PBXNativeTarget "VolumeTests" */ = {
+		84FF6DF81DD779300028CD88 /* Build configuration list for PBXNativeTarget "Volume-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84FF6DF91DD779300028CD88 /* Debug */,
 				84FF6DFA1DD779300028CD88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		84FF6DFB1DD779300028CD88 /* Build configuration list for PBXNativeTarget "VolumeUITests" */ = {
+		84FF6DFB1DD779300028CD88 /* Build configuration list for PBXNativeTarget "Volume-iOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				84FF6DFC1DD779300028CD88 /* Debug */,
 				84FF6DFD1DD779300028CD88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
