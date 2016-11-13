@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84569C511DD7CF2A0060D681 /* BooksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84569C501DD7CF2A0060D681 /* BooksRouter.swift */; };
+		84679DA51DD7C88B0031A645 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84679DA41DD7C88B0031A645 /* Alamofire.framework */; };
+		84679DA71DD7C8E60031A645 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 84679DA41DD7C88B0031A645 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84FF6DD11DD7792F0028CD88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FF6DD01DD7792F0028CD88 /* AppDelegate.swift */; };
 		84FF6DD31DD7792F0028CD88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FF6DD21DD7792F0028CD88 /* ViewController.swift */; };
 		84FF6DD61DD7792F0028CD88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FF6DD41DD7792F0028CD88 /* Main.storyboard */; };
@@ -33,7 +36,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84679DA61DD7C8C30031A645 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84679DA71DD7C8E60031A645 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		84569C501DD7CF2A0060D681 /* BooksRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BooksRouter.swift; sourceTree = "<group>"; };
+		84679DA41DD7C88B0031A645 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		84FF6DCD1DD7792F0028CD88 /* Volume-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Volume-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FF6DD01DD7792F0028CD88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FF6DD21DD7792F0028CD88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84679DA51DD7C88B0031A645 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84679DA31DD7C88B0031A645 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84679DA41DD7C88B0031A645 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84679DA81DD7CB850031A645 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84569C501DD7CF2A0060D681 /* BooksRouter.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		84FF6DC41DD7792F0028CD88 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +116,7 @@
 				84FF6DE41DD779300028CD88 /* VolumeTests */,
 				84FF6DEF1DD779300028CD88 /* VolumeUITests */,
 				84FF6DCE1DD7792F0028CD88 /* Products */,
+				84679DA31DD7C88B0031A645 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				84FF6DD01DD7792F0028CD88 /* AppDelegate.swift */,
+				84679DA81DD7CB850031A645 /* Service */,
 				84FF6DD21DD7792F0028CD88 /* ViewController.swift */,
 				84FF6DD41DD7792F0028CD88 /* Main.storyboard */,
 				84FF6DD71DD7792F0028CD88 /* Assets.xcassets */,
@@ -135,6 +172,7 @@
 				84FF6DC91DD7792F0028CD88 /* Sources */,
 				84FF6DCA1DD7792F0028CD88 /* Frameworks */,
 				84FF6DCB1DD7792F0028CD88 /* Resources */,
+				84679DA61DD7C8C30031A645 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -263,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84FF6DD31DD7792F0028CD88 /* ViewController.swift in Sources */,
+				84569C511DD7CF2A0060D681 /* BooksRouter.swift in Sources */,
 				84FF6DD11DD7792F0028CD88 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +455,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2H4X68RMW5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Volume/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shitbeards.Volume;
@@ -429,6 +472,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2H4X68RMW5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Volume/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shitbeards.Volume;

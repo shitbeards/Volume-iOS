@@ -9,7 +9,23 @@
 import Foundation
 import Alamofire
 
-public enum BooksRouter: URLRequestConvertible {
-  static let baseURLPath = "" // update to our api base url
+enum BooksRouter: URLRequestConvertible {
+  static let baseURLPath = ProcessInfo().environment["API_BASE_URL"]!
   static let apiVersionNumber = 1
+  
+  case book(query: String)
+  
+  func asURLRequest() throws -> URLRequest {
+    let result: (path: String, parameters: Parameters) = {
+      switch self {
+      case let .book(query):
+        return ("/books", ["query" : query])
+      }
+    }()
+    
+    let url = try BooksRouter.baseURLPath.asURL()
+    let urlRequest = URLRequest(url: url.appendingPathComponent(result.path))
+    
+    return try URLEncoding.default.encode(urlRequest, with: result.parameters)
+  }
 }
